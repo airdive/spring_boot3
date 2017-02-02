@@ -1,0 +1,15 @@
+1、使用spring boot，需要支持cluster，所以要用1.4.RELEASE：
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+		<version>1.5.0.RELEASE</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-redis</artifactId>
+	    <version>1.4.4.RELEASE</version>
+	</dependency>
+
+	配置application.properties文件：spring.redis.cluster.nodes=192.168.192.152:6379,192.168.192.156:6379,192.168.192.157:6379
+
+2、使用spring-data-redis
