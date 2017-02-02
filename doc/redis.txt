@@ -19,4 +19,7 @@
 3、使用redis做缓存
 	只需要引入spring-boot-starter-redis即可
 	包：com.ch8cacheredis
+
+4、使用redis缓存session
+	spring-session-data-redis
 	http://www.cnblogs.com/ityouknow/p/5748830.html
