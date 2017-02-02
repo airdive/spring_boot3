@@ -15,3 +15,6 @@
 2、使用spring-data-redis
 	https://www.zifangsky.cn/849.html
 	包：com.ch8springdataredis
+
+3、使用redis做缓存
+	http://www.cnblogs.com/ityouknow/p/5748830.html
