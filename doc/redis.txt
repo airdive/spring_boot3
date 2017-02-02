@@ -13,3 +13,5 @@
 	配置application.properties文件：spring.redis.cluster.nodes=192.168.192.152:6379,192.168.192.156:6379,192.168.192.157:6379
 
 2、使用spring-data-redis
+	https://www.zifangsky.cn/849.html
+	包：com.ch8springdataredis
