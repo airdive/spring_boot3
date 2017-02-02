@@ -2,6 +2,7 @@ package com.ch8ch8cacheredis.service.domain;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class Person implements Serializable {
 
 	private Long id;
