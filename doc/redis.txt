@@ -6,8 +6,8 @@
 	</dependency>
 	<dependency>
 	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-starter-redis</artifactId>
-	    <version>1.4.4.RELEASE</version>
+	    <artifactId>spring-boot-starter-data-redis</artifactId>
+	    <version>1.5.0.RELEASE</version>
 	</dependency>
 
 	配置application.properties文件：spring.redis.cluster.nodes=192.168.192.152:6379,192.168.192.156:6379,192.168.192.157:6379
@@ -21,5 +21,11 @@
 	包：com.ch8cacheredis
 
 4、使用redis缓存session
+	<dependency>
+	    <groupId>org.springframework.session</groupId>
+	    <artifactId>spring-session-data-redis</artifactId>
+	    <version>1.3.0.RELEASE</version>
+	</dependency>
+	但引入这个包后会导致其它没有SessionConfig.java文件的demo报session配置错误，解决办法：测试其他demo时把这个jar包引用删除。
 	spring-session-data-redis
 	http://www.cnblogs.com/ityouknow/p/5748830.html

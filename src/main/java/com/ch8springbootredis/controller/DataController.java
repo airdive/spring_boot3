@@ -16,7 +16,7 @@ public class DataController {
 	//http://localhost:8081/boot/set
 	@RequestMapping("/set") //1
 	public void set(){
-		Person person = new Person("1","wyf66", 32);
+		Person person = new Person("1","wyf661", 32);
 		personDao.save(person);
 		personDao.stringRedisTemplateDemo();
 	}
