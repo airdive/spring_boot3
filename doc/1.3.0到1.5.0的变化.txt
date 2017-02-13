@@ -1,0 +1,12 @@
+1、FilterRegistrationBean
+主要用来对servlet filter进行自定义，比如设置order
+@Bean
+    public FilterRegistrationBean contextFilterRegistrationBean() {
+        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+        DemoFilter demoFilter = new DemoFilter();
+        registrationBean.setFilter(demoFilter);
+        registrationBean.setOrder(1);
+        return registrationBean;
+    }
+包名
+在1.4.0的时候，包名从org.springframework.boot.context.embedded.FilterRegistrationBean变为了import org.springframework.boot.web.servlet.FilterRegistrationBean需要注意一下。
